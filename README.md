@@ -1,8 +1,8 @@
 # Documentation GitHub
 
-Cette doc à pour but de donner les commandes de bases et aussi celles plus spécifique pour une utilisation de GitHub qui soit la meilleure possible. 
+Cette doc à pour but de donner les commandes de bases et aussi celles plus spécifiques pour une utilisation de GitHub qui soit la meilleure possible. 
 
-## Les commandes de bases
+## Les commandes de base
 
 Installer Git (linux) :
 
@@ -39,6 +39,11 @@ Mettre le projet à jour :
 git pull
 ```
 
+Récupérer un projet :
+```bash
+git clone <url de la branche>
+```
+
 ### Pour aller plus loin
 
 Regarder l'état du projet : 
@@ -57,19 +62,19 @@ git log
 
 ### Les commandes
 
-Les branches sont surtout utiliser pour le travail d'équipe, on ne va pas directement programmer sur la branche **main**
+Les branches sont surtout utilisées pour le travail d'équipe, on ne va pas directement programmer sur la branche **main**
 
 
 Créer une branche :
 
-Pour la création de branche, il existe plusieurs façon de procéder 
+Pour la création de branche, il existe plusieurs façons de procéder 
 
 - Utiliser ton nom
 
 ```bash
 git checkout -b yourName
 ```
-- Utiliser le type de fonctionnalité et une description de celle ci (on peut ajouter egalement le numero de ticket associé si il y a)
+- Utiliser le type de fonctionnalité et une description de celle-ci (on peut ajouter également le numero de ticket associé si il y a)
   
 ```bash
 git checkout -b feature/123-feature-name
@@ -99,7 +104,7 @@ A ce moment là, on voit que le merge est possible (able to merge). Il faut ajou
 
 ![PR3](./img/PR3.png)
 
-A partir de maintenant si vous êtes la personne qui controle et gère les PR, c'est à vous de jouer. Vous regardez la description et le code qui a été push. Dans ce cas de figure, la description est correcte et il n'y a pas de conflits, on peut donc cliquer sur le bouton **`Merge PR`**
+A partir de maintenant si vous êtes la personne qui contrôle et gère les PR, c'est à vous de jouer. Vous regardez la description et le code qui a été push. Dans ce cas de figure, la description est correcte et il n'y a pas de conflits, on peut donc cliquer sur le bouton **`Merge PR`**
 
 ![PR4](./img/PR4.png)
 
